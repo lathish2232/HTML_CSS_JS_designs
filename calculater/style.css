@@ -1,0 +1,87 @@
+body{
+background-color: black;
+font-family:'Open Sans',sans-serif;
+font-size: 18px;
+}
+#main_win{
+	width:70rem;
+	height: 40rem;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("bgm.jpg");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	margin: 3rem auto;
+
+}
+#calculater{
+	background-color: whitesmoke;
+	width: 17.8rem;
+	height: 31rem;
+	margin: auto;
+	top: 2.5rem;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 1px rgba(207, 8, 8, 0.3), 0 6px 8px 2px rgba(89, 105, 247, 0.3);
+}
+#output{
+	height: 9.5rem;
+}
+#history{
+	
+	height:3rem;
+	text-align: right;
+	color: rgb(156, 161, 150);
+	margin: 0 20px;
+	padding-top: 20px;
+}
+#result{
+	
+	height:7rem;
+	color:black;
+	text-align: right;
+	margin: 0 20px;
+	font-size: 2rem;
+}
+.operater, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+	outline: 0;
+}
+.number, .empty{
+	background-color: whitesmoke;
+}
+.operater, .number{
+	cursor: pointer;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-image: linear-gradient(to left bottom, #eb000a, #f80034, #ff0054, #ff0074, #fe0093, #fe0090, #ff008c, #ff0089, #ff3066, #ff5547, #fd7629, #eb9209);
+}
+.operater:active,.number:active{
+	font-size: 15px;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-image: linear-gradient(to left bottom, #eb000a, #e90510, #e80b15, #e61019, #e4141d, #dc4907, #d26600, #c77d00, #aca628, #8cc867, #6ae4ad, #5ffbf1);
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-image: linear-gradient(to left bottom, #7000eb, #6507e9, #5a0de8, #4d11e6, #3e15e4, #2340f1, #005cfa, #0073ff, #009fff, #00c2ff, #00e1ff, #5ffbf1);
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-image: linear-gradient(to left bottom, #eb0085, #ff3266, #ff5f47, #ff8927, #feb100, #e5c913, #c8dd39, #a8ef61, #86f68c, #67fab4, #56fbd6, #5ffbf1);
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-image: linear-gradient(to left bottom, #060606, #322133, #6c324d, #a94550, #d86840, #e47b33, #eb9122, #eda800, #eda301, #ec9d03, #ec9806, #eb9209);
+}
+:hover.number,:hover.operater{
+	font-size:22px;
+}
